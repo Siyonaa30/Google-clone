@@ -56,7 +56,7 @@ export default function HomeSearcch() {
               className="h-6 text-center "
             />
           ) : (
-            "I'm feeling lucky"
+            "I'm feeling lucky."
           )}
         </button>
       </div>
