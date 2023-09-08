@@ -2,13 +2,11 @@ import WebSearchResults from "@/components/WebSearchResults";
 import Link from "next/link";
 
 export default async function WebSearchPage({ searchParams }) {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
   const res = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}`
   );
   const data = await res.json();
   const results = data.items;
-
   if (!results) {
     return (
       <div className="flex flex-col justify-center items-center pt-10">

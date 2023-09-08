@@ -19,7 +19,7 @@ export default async function ImageSearchPage({ searchParams }) {
         <p className="text-lg">
           Try search something else or go back to home page{"    "}
           <Link className="text-blue-500" href="/">
-            Home.
+            Home.{" "}
           </Link>
         </p>
       </div>
